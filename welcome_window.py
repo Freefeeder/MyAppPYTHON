@@ -12,10 +12,10 @@ class WelcomeWindow:
         # Etiqueta con mensaje de bienvenida
         welcome_label = ttk.Label(self.frame, text="Bienvenido al sistema", font=('Arial', 20))
         welcome_label.pack(pady=60)
-        
+
         # Temporizador para cerrar la ventana automáticamente
         self.parent.after(3000, self.close_window)
-        
+
 
     def close_window(self):
         self.parent.destroy()

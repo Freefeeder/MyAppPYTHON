@@ -21,7 +21,7 @@ class MenuWindow:
         schedules_button.pack(pady=20)
 
         self.controller = controller
- 
+
     def open_menu_stock(self):
         # Destroy root window
         self.root.destroy()
