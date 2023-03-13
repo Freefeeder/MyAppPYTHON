@@ -16,7 +16,7 @@ class HorariosCanchasWindow(tk.Frame):
         self.db_manager = db_manager
         self.reservation_manager = reservation_manager
         self.create_main_frame()
-        
+
     def create_main_frame(self):
         # Crear tabla para mostrar los horarios disponibles
         columns = (
@@ -94,9 +94,9 @@ class ReserveCourtWindow(tk.Toplevel):
         court_no = int(self.court_no_entry.get())
         start_time = self.start_time_entry.get().strip()
         end_time = self.end_time_entry.get().strip()
-        
+
         reservation = Reservation(court_no, start_time, end_time)
         self.reservation_manager.add_reservation(reservation)
-        
+
         self.master.update_table()
         self.destroy()
